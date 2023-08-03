@@ -6,7 +6,7 @@
 #export PSWW="${DOCKER_CRED_PSW}"
 set -e
 
-docker login -u $DOC -p $PSWW
+echo "$PSWW" | docker login -u $DOC --password-stdin
 
 docker tag muthu:react1 muthuinc/react2
 
