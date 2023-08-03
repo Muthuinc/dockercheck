@@ -2,7 +2,7 @@
 
 set -e
 
-docker login -u $DOCKER_CRED_USR -p $DOCKER_CRED_PSW
+docker login -u $DOC -p $PSWW
 
 docekr tag muthu:react1 muthuinc/react2
 
