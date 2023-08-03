@@ -7,9 +7,9 @@ pipeline {
     stages{
         stage ('build'){
             steps{
-               withCredentials([usernamePassword(credentialsId: 'Docker', passwordVariable: 'PSWW', usernameVariable: 'DOC')]) {
+              
                sh ' ./build.sh '
-               }
+               
             }
         }
     }
