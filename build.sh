@@ -1,9 +1,9 @@
 #! /bin/bash
-export DOC="${DOC}"
-export PSWW="{PSWW}"
+#export DOC="${DOC}"
+#export PSWW="{PSWW}"
 
-export DOC="${DOCKER_CRED_USR}"
-export PSWW="${DOCKER_CRED_PSW}"
+#export DOC="${DOCKER_CRED_USR}"
+#export PSWW="${DOCKER_CRED_PSW}"
 set -e
 
 docker login -u $DOC -p $PSWW
@@ -12,4 +12,4 @@ docker tag muthu:react1 muthuinc/react2
 
 docker push muthuinc/react2
 
-docekr logout
+docker logout
