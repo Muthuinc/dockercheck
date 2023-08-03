@@ -1,5 +1,9 @@
 #! /bin/bash
+export DOC="${DOC}"
+export PSWW="{PSWW}"
 
+export DOC="${DOCKER_CRED_USR}"
+export PSWW="${DOCKER_CRED_PSW}"
 set -e
 
 docker login -u $DOC -p $PSWW
